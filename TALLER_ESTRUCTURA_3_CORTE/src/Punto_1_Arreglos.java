@@ -23,7 +23,7 @@ public class Punto_1_Arreglos {
 			for (int j = 0; j < columns; j++) {
 				System.out.println("La fila: " + i );
 				System.out.println("La columna: " + j);
-				matriz [i] [j] = (int) (Math.random()*100);
+				matriz [i] [j] = (int) (Math.random()*3);
 				System.out.println("La matriz " + matriz [i] [j] + " En cada posición");
 			}
 			
@@ -47,22 +47,13 @@ public class Punto_1_Arreglos {
 				
 		//b. Sumar y guardar todos los numeros en una varible de tipo float
 		
-		float resultado = suma(matriz);
+		int resultado = suma(matriz);
 		System.out.println("La suma de los numeros de la matriz es:  " + resultado);
 		
 		
 		//c. Calcular el factorial del numero entero del paso b
 		
-		long factorial = 1;
-		
-		for (int i = 2; i < resultado; i++) {
-			
-			  factorial *= i;
-			
-		}
-		
-		
-		System.out.println("EL factorial es: " + factorial);
+		System.out.println("EL factorial es: " + Factorial(resultado));
 		
 		
 	}
@@ -81,10 +72,12 @@ public class Punto_1_Arreglos {
         
    
 }
+	//Esta funcion calcula el factorial de cualquier numero
 	
 	public static int Factorial(int n) {
+		
 	    int factorial = 1;
-	    for (int i = 2; i <= n; ++i) {
+	    for (int i = 1; i <= n; ++i) {
 	      factorial *= i;
 	    }
 	    return factorial;
