@@ -21,6 +21,17 @@ public class Punto_2_Matrices {
 			
 		}
 		
+		for (int i = 0; i < 23; i++) {
+			
+			for (int j = 0; j < 23; j++) {
+				System.out.println("La fila: " + i );
+				System.out.println("La columna: " + j);
+				matro [i] [j] = (int) (Math.random()*10);
+				System.out.println("La matriz " + matro [i] [j] + " En cada posición");
+			}
+			
+		}
+		
 		 System.out.println("\n");
 		 System.out.println("La matriz 1 llena se ve asi:  ");
 		 
